@@ -1,0 +1,141 @@
+/* developed by Daniel Kandilas */
+
+body {
+      font-family: 'Open Sans';
+}
+
+h3 {
+  display:inline-block;
+}
+
+span {
+  display:block;
+  text-align:left;
+}
+
+p {
+  font-size:28px;
+}
+
+#step1 p, #step2 p, #step3 p, #step4 p, #step5 p, #step6 p {
+  font-weight:bold;
+  text-align:left;
+  font-size:20px !important;
+}
+
+#step1 p:first-child, #step2 p:first-child, #step3 p:first-child, #step4 p:first-child, #step5 p:first-child, #step6 p:first-child {
+  font-weight:bold;
+}
+
+.header {
+  font-family: 'Open Sans Bold', 'Open Sans';
+  font-size:24px;
+  font-weight:700;
+  color:#004D85;
+  margin-left:10px;
+  display:inline-block;
+}
+
+.container {
+  padding-top: 20px;
+}
+
+a {
+  color: white;
+}
+
+.link-col,
+.link-col:hover {
+  color: black;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section {
+  margin: 0 auto;
+  min-width: 750px;
+  max-width: 750px;
+}
+
+button {
+  width: 75% !important;
+  margin: 0 auto;
+}
+
+.btn.btn-outline-secondary {
+  width: 100% !important;
+}
+
+.btn-outline-secondary {
+  border:2px solid;
+  border-color:rgba(0, 105, 181, 1);
+  color:black;  
+}
+
+.btn-outline-secondary:hover {
+  color:white;
+  background:rgba(0, 105, 181, 1);
+}
+
+.btn-custom {
+  border-radius: 8px;
+}
+.fa-arrow-left, .fa-sign-out-alt {
+  color:rgba(0, 105, 181, 1)
+}
+
+.btn-outline-secondary:hover .fa-arrow-left, .btn-outline-secondary:hover .fa-sign-out-alt {
+  color:white;
+}
+
+.fa-times-circle,
+.red {
+  color: darkred;
+  text-align: center;
+}
+
+.fa-check-circle,
+.green {
+  color: darkgreen;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+
+.div-style {
+  text-align: center !important;
+  padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  section {
+    margin: 0 auto;
+    min-width: 500px;
+    max-width: 500px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  section {
+    margin: 0 auto;
+    min-width: auto;
+    max-width: 550px;
+  }
+}
+
+.btn-primary {
+  background-color: rgba(0, 105, 181, 1);
+  border-color: rgba(0, 105, 181, 1);
+  width:180px !important;
+}
+
+.btn-secondary {
+  width:180px !important;
+}
+
+a:hover {
+  color: white;
+  text-decoration: none;
+}
