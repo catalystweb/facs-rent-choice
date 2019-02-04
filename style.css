@@ -17,6 +17,20 @@ p {
   font-size:28px;
 }
 
+.eligible {
+  display:block !important;
+  width:50%;
+  margin:0 auto;
+}
+
+.eligible li {
+  text-align:left;
+}
+
+.match {
+  font-size:24px !important;
+}
+
 #step1 p, #step2 p, #step3 p, #step4 p, #step5 p, #step6 p {
   font-weight:bold;
   text-align:left;
@@ -25,6 +39,10 @@ p {
 
 #step1 p:first-child, #step2 p:first-child, #step3 p:first-child, #step4 p:first-child, #step5 p:first-child, #step6 p:first-child {
   font-weight:bold;
+}
+
+#step2-yes p {
+  text-align:center;
 }
 
 .header {

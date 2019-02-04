@@ -35,144 +35,146 @@
 		<div class="row">
 			<section>
 				<div id="start" class="border rounded">
+              <div class="div-style">
+                <div style="display:inline-block;"><i class="far fa-check-square fa-2x" style="color:#004D85;"></i><span class="header"> Rent Choice</span></div>
+                <br><br>
+                <p>Find out what rental assistance is right for you.
+                </p><br>
+                <ul class="list-inline">
+                    <li><button type="button" aria-label="Start" class="btn btn-primary btn-lg btn-block yes-step">Start</button></li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://www.companioncard.nsw.gov.au" target="_parent"><button type="button" class="btn btn-secondary btn-lg btn-block no-step">Exit</button></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
-					<div class="div-style">
-
-						<div style="display:inline-block;"><i class="far fa-check-square fa-2x" style="color:#004D85;"></i><span class="header"> Rent Choice</span></div>
-						<br><br>
-            <p>Find out what rental assistance is right for you.
-                        </p><br>
-                        <ul class="list-inline">
-                            <li><button type="button" aria-label="Start" class="btn btn-primary btn-lg btn-block yes-step">Start</button></li>
-                        </ul>
-                        <ul class="list-inline">
-                            <li>
-                                <a href="https://www.companioncard.nsw.gov.au" target="_parent"><button type="button" class="btn btn-secondary btn-lg btn-block no-step">Exit</button></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
+        <div id="step1" class="border rounded" style="display:none;">
+            <div id="step1-q" class="div-style">
+                <p>Q1: Are you a permanent resident of NSW?
+                </p><br>
+                <span class="list-inline">
+                  <input id="step1-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                  <label for="step1-rad-y" class="radio-custom-label">Yes</label>
+                </span>
+                <span class="list-inline">
+                  <input id="step1-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                  <label for="step1-rad-n" class="radio-custom-label">No</label>
+                </span> 
+            </div>			
+            <div id="step1-a" class="div-style">
+                <div id="step1-yes">
                 </div>
+                <div id="step1-no">
+					        <p class="match"><strong>No matches found</strong></p>                                                          
+                  <br>
+                  <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
+                </div>                        
+            </div>
+            <div class="div-style">
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
-                <div id="step1" class="border rounded" style="display:none;">
-                    <div id="step1-q" class="div-style">
-                        <p>Q1: Are you a permanent resident of NSW?
-                        </p><br>
-                        <span class="list-inline">
-                          <input id="step1-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                          <label for="step1-rad-y" class="radio-custom-label">Yes</label>
-						            </span>
-                        <span class="list-inline">
-						              <input id="step1-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                          <label for="step1-rad-n" class="radio-custom-label">No</label>
-                        </span> 
-                    </div>			
-                    <div id="step1-a" class="div-style">
-                        <div id="step1-yes">
-                        </div>
-                        <div id="step1-no">
-							              <p class="center"><i class="far fa-times-circle fa-2x"></i></p>
-                            <p class="red"><strong>You may not be eligible</strong></p>
-                            <p>Only permanent residents of NSW are able to apply for a NSW Companion Card. If you reside in another State or Territory please
-                                contact the relevant State or Territory program.
-                            </p>
-                            <p>For eligibility criteria <a href="./?a=579401" style="color:black !important;" target="_parent"><strong>click here</strong></a></p>
-                        </div>                        
-                    </div>
-                    <div class="div-style">
-                        <ul class="list-inline float-left">
-                            <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-						                <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                        </ul>
-                        <ul class="list-inline float-right">
-                            <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
+        <div id="step2" class="border rounded" style="display:none;">
+            <div id="step2-q" class="div-style">
+                <p>Q2: Are you 16-24 years old?
+                </p><br>
+              <span class="list-inline">
+                <input id="step2-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                <label for="step2-rad-y" class="radio-custom-label">Yes</label>
+              </span>
+              <span class="list-inline">
+                <input id="step2-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                <label for="step2-rad-n" class="radio-custom-label">No</label>
+              </span>
+            </div>
+            <div id="step2-a" class="div-style">
+                <div id="step2-yes">
+                  <p class="match"><strong>Best Match</strong></p>
+                  <p>Rent choice Youth</p>                                                    
+                  <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                  <br>
+                  <p>More information about Rent Choice youth on FACS</p>
+                  <span style="border-bottom:1px solid #333;"></span>
+                  <br>                  
+                  <p><strong>You may also be eligible for:</strong></p>
+                  <p>
+                    <ul class="eligible">
+                      <li>Rent Start Bond Loan</li>
+                      <li>Advance Rent</li>
+                      <li>Tenancy Assistance</li>
+                      <li>Tenancy Guarantee</li>
+                      <li>Brokerage Funds</li>
+                    </ul>
+                  </p>
+                  <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
                 </div>
+                <div id="step2-no">                    
+                </div>                        
+            </div>
+            <div class="div-style">
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
-                <div id="step2" class="border rounded" style="display:none;">
-                    <div id="step2-q" class="div-style">
-                        <p>Q2: Are you 16-24 years old?
-                        </p><br>
-                      <span class="list-inline">
-                        <input id="step2-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                        <label for="step2-rad-y" class="radio-custom-label">Yes</label>
-                      </span>
-                      <span class="list-inline">
-                        <input id="step2-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                        <label for="step2-rad-n" class="radio-custom-label">No</label>
-                      </span>
-                    </div>
-                    <div id="step2-a" class="div-style">
-                        <div id="step2-yes">
-                        </div>
-                        <div id="step2-no">
-                            <p class="center"><i class="far fa-times-circle fa-2x"></i></p>
-                            <p class="red"><strong>You may not be eligible</strong></p>
-                            <p>Companion Cards can only be issued to people who will always need high level attendant care support to enjoy the community.
-                            For example, some people need a carer because they are a child or because they need encouragement to go out. Others may need
-                            a carer for confidence. Unfortunately a card cannot be issued for these reasons.
-                            </p>
-                            <p>For eligibility criteria <a href="./?a=579401" style="color:black !important;" target="_parent"><strong>click here</strong></a></p>
-                        </div>                        
-                    </div>
-                    <div class="div-style">
-                        <ul class="list-inline float-left">
-							              <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                            <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                        </ul>
-                        <ul class="list-inline float-right">
-	                          <li><button type="button" aria-label="Back" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <div id="step3" class="border rounded" style="display:none;">
-                    <div id="step3-q" class="div-style">
-                        <p>Q3:  Are you currently a social housing tenant?
-                        </p>
-                        <p style="font-weight:normal; font-size:14px !important;">This also includes Aboriginal and Community Housing</p>
-                        <br>
-                        <span class="list-inline">
-                          <input id="step3-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                          <label for="step3-rad-y" class="radio-custom-label">Yes</label>
-                        </span>
-                        <span class="list-inline">
-                          <input id="step3-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                          <label for="step3-rad-n" class="radio-custom-label">No</label>
-                        </span>
-                    </div>
+        <div id="step3" class="border rounded" style="display:none;">
+            <div id="step3-q" class="div-style">
+                <p>Q3:  Are you currently a social housing tenant?
+                </p>
+                <p style="font-weight:normal; font-size:14px !important;">This also includes Aboriginal and Community Housing</p>
+                <br>
+                <span class="list-inline">
+                  <input id="step3-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                  <label for="step3-rad-y" class="radio-custom-label">Yes</label>
+                </span>
+                <span class="list-inline">
+                  <input id="step3-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                  <label for="step3-rad-n" class="radio-custom-label">No</label>
+                </span>
+            </div>
                     
-                    <div id="step3-a" class="div-style">
-                        <div id="step3-yes">                            
-                            <p><strong>Best Match</strong></p>
-                            <p>Rent choice Youth</p>                                                    
-                            <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                            <br>
-                            <p>More information about Rent Choice youth on FACS</p>
-                            <span style="border-bottom:1px solid #333;"></span>
-                            <br>
-                            <p><strong>You may also be eligible for:</strong></p>
-                            <p>For eligibility criteria <a href="./?a=579401" style="color:black !important;"><strong>click here</strong></a></p>
-                        </div>
-                        <div id="step3-no">
-                        </div>
-                        
-                    </div>
-
-                    <div class="div-style">
-                        <ul class="list-inline float-left">
-							              <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                            <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                        </ul>
-                        <ul class="list-inline float-right">
-                          <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>													
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
+            <div id="step3-a" class="div-style">
+                <div id="step3-yes">                            
+			            <p class="match"><strong>To be continued</strong></p>                                                          
+			            <br>
+			            <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
                 </div>
+                <div id="step3-no">
+                  <p class="match"><strong>To be continued</strong></p>                                                          
+			            <br>
+			            <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>				
+                </div>                
+            </div>
+
+            <div class="div-style">
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                  <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>													
+                </ul>
+            </div>
+            <div class="clearfix"></div>
+        </div>
 
                 <div id="step4" class="border rounded" style="display:none;">
                     <div id="step4-q" class="div-style">
