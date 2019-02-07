@@ -1,61 +1,100 @@
 /* developed by Daniel Kandilas */
 
 body {
-      font-family: 'Open Sans';
+  font-family: "Open Sans";
+  background-color: transparent;
+}
+
+body p {
+  font-size: 20px;
+  text-align: left;
 }
 
 h3 {
-  display:inline-block;
+  display: inline-block;
 }
 
 span {
-  display:block;
-  text-align:left;
+  display: block;
+  text-align: left;
 }
 
 p {
-  font-size:28px;
+  font-size: 28px;
+}
+
+.border {
+  border: 1px solid rgba(188, 188, 188, 1) !important;
+  overflow: hidden;
 }
 
 .eligible {
-  display:block !important;
-  width:50%;
-  margin:0 auto;
+  display: block !important;
+  width: 210px;
+  margin: 0 auto;
 }
 
 .eligible li {
-  text-align:left;
+  text-align: left;
+  border-bottom: 1px solid #00c4ff;
 }
 
 .match {
-  font-size:24px !important;
+  text-align: center;
+  font-size: 24px !important;
 }
 
-#step1 p, #step2 p, #step3 p, #step4 p, #step5 p, #step6 p {
-  font-weight:bold;
-  text-align:left;
-  font-size:20px !important;
+.match-subhead {
+  font-size: 24px !important;
 }
 
-#step1 p:first-child, #step2 p:first-child, #step3 p:first-child, #step4 p:first-child, #step5 p:first-child, #step6 p:first-child {
-  font-weight:bold;
+.text {
+  font-size: 16px;
 }
 
-#step2-yes p {
-  text-align:center;
+.text span {
+  border-bottom: 1px solid #00c4ff;
+  display: inline-block;
+}
+
+#step1 p:first-child,
+#step2 p:first-child,
+#step3 p:first-child,
+#step4 p:first-child,
+#step5 p:first-child,
+#step6 p:first-child,
+#step7 p:first-child,
+#step8 p:first-child {
+  font-weight: bold;
+}
+
+#step2-yes p,
+#step3-no p,
+#step4-yes p,
+#step5-yes p,
+#step7-yes p,
+#step7-no p,
+#step8-yes p,
+#step8-no p {
+  text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 15px;
 }
 
 .header {
-  font-family: 'Open Sans Bold', 'Open Sans';
-  font-size:24px;
-  font-weight:700;
-  color:#004D85;
-  margin-left:10px;
-  display:inline-block;
+  font-family: "Open Sans Bold", "Open Sans";
+  font-size: 24px;
+  font-weight: 700;
+  color: #004d85;
+  margin-left: 10px;
+  display: inline-block;
 }
 
-.container {
+.cont-ainer {
   padding-top: 20px;
+  max-width: 750px;
+  margin: 0 auto;
 }
 
 a {
@@ -73,6 +112,7 @@ section {
   margin: 0 auto;
   min-width: 750px;
   max-width: 750px;
+  background: white;
 }
 
 button {
@@ -85,25 +125,27 @@ button {
 }
 
 .btn-outline-secondary {
-  border:2px solid;
-  border-color:rgba(0, 105, 181, 1);
-  color:black;  
+  border: 2px solid;
+  border-color: rgba(0, 105, 181, 1);
+  color: black;
 }
 
 .btn-outline-secondary:hover {
-  color:white;
-  background:rgba(0, 105, 181, 1);
+  color: white;
+  background: rgba(0, 105, 181, 1);
 }
 
 .btn-custom {
   border-radius: 8px;
 }
-.fa-arrow-left, .fa-sign-out-alt {
-  color:rgba(0, 105, 181, 1)
+.fa-arrow-left,
+.fa-sign-out-alt {
+  color: rgba(0, 105, 181, 1);
 }
 
-.btn-outline-secondary:hover .fa-arrow-left, .btn-outline-secondary:hover .fa-sign-out-alt {
-  color:white;
+.btn-outline-secondary:hover .fa-arrow-left,
+.btn-outline-secondary:hover .fa-sign-out-alt {
+  color: white;
 }
 
 .fa-times-circle,
@@ -124,14 +166,19 @@ button {
 
 .div-style {
   text-align: center !important;
-  padding: 20px;
+  padding: 30px;
+  background-color: white;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 750px) {
   section {
     margin: 0 auto;
     min-width: 500px;
     max-width: 500px;
+  }
+
+  #step2-yes p {
+    width: 100%;
   }
 }
 
@@ -141,16 +188,19 @@ button {
     min-width: auto;
     max-width: 550px;
   }
+  #step2-yes p {
+    width: 100%;
+  }
 }
 
 .btn-primary {
   background-color: rgba(0, 105, 181, 1);
   border-color: rgba(0, 105, 181, 1);
-  width:180px !important;
+  width: 180px !important;
 }
 
 .btn-secondary {
-  width:180px !important;
+  width: 180px !important;
 }
 
 a:hover {

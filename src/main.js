@@ -46,7 +46,7 @@ $(document).ready(function() {
               "none"
             );
             $("#" + parentID + "-rad-y").prop("checked", false);
-            $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("slow");
+            $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
             $(".back-to-last").css("display", "inline-block");
           }
         }, 300);
@@ -66,7 +66,21 @@ $(document).ready(function() {
         }, 300);
       }
       if ($("#step3-rad-y").is(":checked")) {
-        setTimeout(function () {
+        setTimeout(function() {
+          $("#" + parentID + "-q").fadeOut("slow");
+          if ($("#" + parentID + "-yes").length > 0) {
+            $("[id^=" + parentID + "],[id^=" + previousParent + "]").css(
+              "display",
+              "none"
+            );
+            $("#" + parentID + "-rad-y").prop("checked", false);
+            $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
+            $(".back-to-last").css("display", "inline-block");
+          }
+        }, 300);
+      }
+      if ($("#step4-rad-y").is(":checked")) {
+        setTimeout(function() {
           $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-yes").length > 0) {
             $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("fast");
@@ -79,34 +93,11 @@ $(document).ready(function() {
           }
         }, 300);
       }
-      // if ($("#step3-rad-y").is(":checked")) {
-      //   setTimeout(function() {
-      //     $("#" + parentID + "-q").css("display", "none");
-      //     if ($("#" + parentID + "-yes").length > 0) {
-      //       $("[id^=" + parentID + "],[id^=" + previousParent + "]").css(
-      //         "display",
-      //         "none"
-      //       );
-      //       $("#" + parentID + "-rad-y").prop("checked", false);
-      //       $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
-      //     }
-      //   }, 300);
-      // }
-      if ($("#step4-rad-y").is(":checked")) {
-        setTimeout(function() {
-          $("#" + parentID + "-q").fadeOut("slow");
-          if ($("#" + parentID + "-yes").length > 0) {
-            $("[id^=" + parentID + "]").css("display", "none");
-            $("#" + parentID + "-rad-y").prop("checked", false);
-            $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
-          }
-        }, 300);
-      }
       if ($("#step5-rad-y").is(":checked")) {
         setTimeout(function() {
           $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-yes").length > 0) {
-            $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("slow");
+            $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
@@ -120,7 +111,37 @@ $(document).ready(function() {
         setTimeout(function() {
           $("#" + parentID + "-q").fadeOut("slow");
           if ($("#" + parentID + "-yes").length > 0) {
-            $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("fast");
+            $("[id^=" + parentID + "]").css("display", "none");
+            $("#" + parentID + "-rad-y").prop("checked", false);
+            $("#step7, #step7-q").fadeIn("fast");
+          }
+        }, 300);
+      }
+      if ($("#step7-rad-y").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").css("display", "none");
+          if ($("#" + parentID + "-yes").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $(
+              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
+            ).fadeIn("fast");
+            $("#" + parentID + "-a")
+              .find("ul")
+              .css("display", "none");
+            $("#" + parentID + "-rad-y").prop("checked", false);
+            $(".back-to-last").css("display", "none");
+            $(".back-to-last-err").css("display", "inline-block");
+          }
+        }, 300);
+      }
+      if ($("#step8-rad-y").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").css("display", "none");
+          if ($("#" + parentID + "-yes").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $(
+              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
+            ).fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
@@ -177,9 +198,73 @@ $(document).ready(function() {
       }
       if ($("#step3-rad-n").is(":checked")) {
         setTimeout(function() {
-          $("#" + parentID + "-q").css("display","none");
+          $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-no").length > 0) {
             $("#" + parentID + "-a, #" + parentID + "-no").fadeIn("fast");
+            $("#" + parentID + "-a")
+              .find("ul")
+              .css("display", "none");
+            $("#" + parentID + "-rad-n").prop("checked", false);
+            $(".back-to-last").css("display", "none");
+            $(".back-to-last-err").css("display", "inline-block");
+          }
+        }, 300);
+      }
+      if ($("#step4-rad-n").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").fadeOut("slow");
+          if ($("#" + parentID + "-no").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $("#" + parentID + "-rad-n").prop("checked", false);
+            $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
+          }
+        }, 300);
+      }
+      if ($("#step5-rad-n").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").fadeOut("slow");
+          if ($("#" + parentID + "-no").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $("#" + parentID + "-rad-n").prop("checked", false);
+            $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
+          }
+        }, 300);
+      }
+      if ($("#step6-rad-n").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").fadeOut("slow");
+          if ($("#" + parentID + "-no").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $("#" + parentID + "-rad-n").prop("checked", false);
+            $("#step8 , #step8-q").fadeIn("fast");
+          }
+        }, 300);
+      }
+      if ($("#step7-rad-n").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").css("display", "none");
+          if ($("#" + parentID + "-no").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $(
+              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
+            ).fadeIn("fast");
+            $("#" + parentID + "-a")
+              .find("ul")
+              .css("display", "none");
+            $("#" + parentID + "-rad-n").prop("checked", false);
+            $(".back-to-last").css("display", "none");
+            $(".back-to-last-err").css("display", "inline-block");
+          }
+        }, 300);
+      }
+      if ($("#step8-rad-n").is(":checked")) {
+        setTimeout(function() {
+          $("#" + parentID + "-q").css("display", "none");
+          if ($("#" + parentID + "-no").length > 0) {
+            $("[id^=" + parentID + "]").css("display", "none");
+            $(
+              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
+            ).fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
@@ -253,7 +338,27 @@ $(document).ready(function() {
           }
           break;
         case "step6":
-          if ($(".green").is(":visible")) {
+          if ($(".match").is(":visible")) {
+            $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
+            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last").css("display", "inline-block");
+            document.getElementById(parentID + "-a").style.display = "none";
+          }
+          break;
+        case "step7":
+          $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
+          $(".back-to-last-err").css("display", "none");
+          $(".back-to-last").css("display", "inline-block");
+          document.getElementById(parentID + "-a").style.display = "none";
+          break;
+        case "step8":
+          if ($(".match").is(":visible")) {
+            $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
+            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last").css("display", "inline-block");
+            document.getElementById(parentID + "-a").style.display = "none";
+          }
+          if ($(".match2").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
             $(".back-to-last-err").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
@@ -275,7 +380,6 @@ $(document).ready(function() {
       .parent()
       .prev("div")
       .attr("id");
-
     var nextParent = this_
       .closest("div")
       .parent()
@@ -318,6 +422,16 @@ $(document).ready(function() {
           $("#" + previousParent + ", #" + previousParent + "-q").fadeIn(
             "fast"
           );
+          break;
+        case "step7":
+          $("#" + parentID).css("display", "none");
+          $("#" + previousParent + ", #" + previousParent + "-q").fadeIn(
+            "fast"
+          );
+          break;
+        case "step8":
+          $("#" + parentID).css("display", "none");
+          $("#step6, #step6-q").fadeIn("fast");
           break;
       }
     });

@@ -9,7 +9,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-	<title>Companion Card: Am I Eligible</title>
+	<title>Rent Choice: Find out what rental assistance is right for you</title>
 	<meta name="description" content="Companion Card: Am I Eligible">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone=no">
@@ -19,26 +19,29 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
 	 crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
-	<!-- <link rel="stylesheet" href="./?a=630131"> -->
-	<link rel="stylesheet" href="style.css">
+	
+  <link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="radiobtn.css">
+  
+  <!-- <link rel="stylesheet" href="./?a=648149">
+	<link rel="stylesheet" href="./?a=648153"> -->
 
 </head>
 <!-- Developed by Daniel Kandilas -->
 
-<body>
+<body class="body-class">
 	<!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-	<div class="container">
-		<div class="row">
+	<div class="cont-ainer">
+		<div>
 			<section>
 				<div id="start" class="border rounded">
-              <div class="div-style">
-                <div style="display:inline-block;"><i class="far fa-check-square fa-2x" style="color:#004D85;"></i><span class="header"> Rent Choice</span></div>
+					<div class="div-style">
+						<div style="display:inline-block;"><i class="far fa-check-square fa-2x" style="color:#004D85;"></i><span class="header"> Rent Choice</span></div>
                 <br><br>
-                <p>Find out what rental assistance is right for you.
+                <p style="text-align:center;">Find out what rental assistance is right for you.
                 </p><br>
                 <ul class="list-inline">
                     <li><button type="button" aria-label="Start" class="btn btn-primary btn-lg btn-block yes-step">Start</button></li>
@@ -54,7 +57,7 @@
 
         <div id="step1" class="border rounded" style="display:none;">
             <div id="step1-q" class="div-style">
-                <p>Q1: Are you a permanent resident of NSW?
+                <p>Q1: Are you an Australian citizen or permanent resident?
                 </p><br>
                 <span class="list-inline">
                   <input id="step1-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
@@ -64,12 +67,12 @@
                   <input id="step1-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
                   <label for="step1-rad-n" class="radio-custom-label">No</label>
                 </span> 
-            </div>			
+            </div>            
             <div id="step1-a" class="div-style">
                 <div id="step1-yes">
                 </div>
                 <div id="step1-no">
-					        <p class="match"><strong>No matches found</strong></p>                                                          
+                  <p class="match"><strong>No matches found</strong></p>                                                          
                   <br>
                   <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
                 </div>                        
@@ -88,25 +91,28 @@
 
         <div id="step2" class="border rounded" style="display:none;">
             <div id="step2-q" class="div-style">
-                <p>Q2: Are you 16-24 years old?
-                </p><br>
-              <span class="list-inline">
-                <input id="step2-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                <label for="step2-rad-y" class="radio-custom-label">Yes</label>
-              </span>
-              <span class="list-inline">
-                <input id="step2-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                <label for="step2-rad-n" class="radio-custom-label">No</label>
-              </span>
+                <p>Q2: Are you currently a social housing tenant?
+                </p>
+                <p style="font-weight:normal; font-size:14px !important;">This also includes Aboriginal and Community Housing</p>
+                <br>
+                <span class="list-inline">
+                  <input id="step2-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                  <label for="step2-rad-y" class="radio-custom-label">Yes</label>
+                </span>
+                <span class="list-inline">
+                  <input id="step2-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                  <label for="step2-rad-n" class="radio-custom-label">No</label>
+                </span>
             </div>
             <div id="step2-a" class="div-style">
                 <div id="step2-yes">
                   <p class="match"><strong>Best Match</strong></p>
-                  <p>Rent choice Youth</p>                                                    
+                  <p class="match-subhead">Rent Choice Transition</p>                                                    
                   <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
                   <br>
-                  <p>More information about Rent Choice youth on FACS</p>
-                  <span style="border-bottom:1px solid #333;"></span>
+                  <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                  <br>
+                  <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
                   <br>                  
                   <p><strong>You may also be eligible for:</strong></p>
                   <p>
@@ -115,10 +121,11 @@
                       <li>Advance Rent</li>
                       <li>Tenancy Assistance</li>
                       <li>Tenancy Guarantee</li>
-                      <li>Brokerage Funds</li>
+                      <li>Rent Start Move</li>
                     </ul>
                   </p>
-                  <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
+                  <br>
+                  <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>
                 </div>
                 <div id="step2-no">                    
                 </div>                        
@@ -137,9 +144,8 @@
 
         <div id="step3" class="border rounded" style="display:none;">
             <div id="step3-q" class="div-style">
-                <p>Q3:  Are you currently a social housing tenant?
-                </p>
-                <p style="font-weight:normal; font-size:14px !important;">This also includes Aboriginal and Community Housing</p>
+                <p>Q3: Are you homeless or at risk of homelessness?
+                </p>                
                 <br>
                 <span class="list-inline">
                   <input id="step3-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
@@ -149,20 +155,83 @@
                   <input id="step3-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
                   <label for="step3-rad-n" class="radio-custom-label">No</label>
                 </span>
-            </div>
-                    
+            </div>                    
             <div id="step3-a" class="div-style">
-                <div id="step3-yes">                            
-			            <p class="match"><strong>To be continued</strong></p>                                                          
-			            <br>
-			            <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
+                <div id="step3-yes">                                      
                 </div>
                 <div id="step3-no">
-                  <p class="match"><strong>To be continued</strong></p>                                                          
-			            <br>
-			            <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>				
-                </div>                
+                  <p class="match"><strong>Best Match</strong></p>
+                  <p class="match-subhead">Rent Choice Bond Loan</p>                                                    
+                  <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                  <br>
+                  <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                  <br>
+                  <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                  <br>                  
+                  <p><strong>You may also be eligible for:</strong></p>
+                  <p>
+                    <ul class="eligible">
+                      <li>Rent Start Bond Loan</li>
+                      <li>Advance Rent</li>
+                      <li>Tenancy Assistance</li>
+                      <li>Tenancy Guarantee</li>
+                      <li>Rent Start Move</li>
+                    </ul>
+                  </p>
+                  <br>
+                  <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>
+                </div>
             </div>
+            <div class="div-style">
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                </ul>
+            </div>
+            <div class="clearfix"></div>               
+         </div>
+          <div id="step4" class="border rounded" style="display:none;">
+          <div id="step4-q" class="div-style">
+              <p>Q4: Are you leaving your home, or have you already left your home due to domestic violence?
+              </p>              
+              <br>
+              <span class="list-inline">
+                <input id="step4-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                <label for="step4-rad-y" class="radio-custom-label">Yes</label>
+              </span>
+              <span class="list-inline">
+                <input id="step4-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                <label for="step4-rad-n" class="radio-custom-label">No</label>
+              </span>
+          </div>                    
+          <div id="step4-a" class="div-style">
+              <div id="step4-yes">
+                <p class="match"><strong>Best Match</strong></p>
+                  <p class="match-subhead">Rent Choice Start Safely</p>                                                    
+                  <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                  <br>
+                  <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                  <br>
+                  <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                  <br>                  
+                  <p><strong>You may also be eligible for:</strong></p>
+                  <p>
+                    <ul class="eligible">
+                      <li>Rent Start Bond Loan</li>
+                      <li>Advance Rent</li>
+                      <li>Tenancy Assistance</li>
+                      <li>Tenancy Guarantee</li>
+                    </ul>
+                  </p>
+                  <br>
+                  <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                                       
+              </div>
+              <div id="step4-no">                    
+              </div>                
+          </div>
 
             <div class="div-style">
                 <ul class="list-inline float-left">
@@ -170,132 +239,233 @@
                     <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
                 </ul>
                 <ul class="list-inline float-right">
-                  <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>													
+                  <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>                                                    
                 </ul>
             </div>
             <div class="clearfix"></div>
         </div>
-
-                <div id="step4" class="border rounded" style="display:none;">
-                    <div id="step4-q" class="div-style">
-                        <p>Q4: Does your carer help you with mobility, planning, self-care (feeding, toileting) communication or managing money?
-                        </p><br>
-                        <span class="list-inline">
-                          <input id="step4-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                          <label for="step4-rad-y" class="radio-custom-label">Yes</label>
-                        </span>
-                        <span class="list-inline">
-                          <input id="step4-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                          <label for="step4-rad-n" class="radio-custom-label">No</label>
-                        </span>
-                    </div>                    
-                    <div id="step4-a" class="div-style">
-                        <div id="step4-yes">
-                        </div>
-                        <div id="step4-no">
-							              <p class="center"><i class="far fa-times-circle fa-2x"></i></p>
-                            <p class="red"><strong>You may not be eligible</strong></p>
-                            <p>If you don't require assistance with some of these tasks, you may not be eligible for a Companion Card. These attendant
-                                care tasks are what Companion Card was designed for.</p>
-                            <p>For eligibility criteria <a href="./?a=579401" style="color:black !important;" target="_parent"><strong>click here</strong></a></p>
-                        </div>                        
-                    </div>
-                    <div class="div-style">
-                        <ul class="list-inline float-left">
-						                <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                            <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+          <div id="step5" class="border rounded" style="display:none;">
+              <div id="step5-q" class="div-style">
+                  <p>Q5: Are you a former ADF member & been on active service (including peacekeeping) after 1 August 1990?
+                  </p><br>
+                  <span class="list-inline">
+                    <input id="step5-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <label for="step5-rad-y" class="radio-custom-label">Yes</label>
+                  </span>
+                  <span class="list-inline">
+                    <input id="step5-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <label for="step5-rad-n" class="radio-custom-label">No</label>
+                  </span>
+              </div>                    
+              <div id="step5-a" class="div-style">
+                  <div id="step5-yes">
+                    <p class="match"><strong>Best Match</strong></p>
+                    <p class="match-subhead">Rent Choice Veterans</p>                                                    
+                    <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                    <br>
+                    <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                    <br>
+                    <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                    <br>                  
+                    <p><strong>You may also be eligible for:</strong></p>
+                    <p>
+                      <ul class="eligible">
+                        <li>Rent Start Bond Loan</li>
+                        <li>Advance Rent</li>
+                        <li>Tenancy Assistance</li>
+                        <li>Tenancy Guarantee</li>
+                      </ul>
+                    </p>
+                    <br>
+                    <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p> 
+                  </div>
+                 <div id="step5-no">                            
+                 </div>                        
+              </div>
+              <div class="div-style">
+                  <ul class="list-inline float-left">
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                  </ul>
+                  <ul class="list-inline float-right">
+                    <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+          <div id="step6" class="border rounded" style="display:none;">
+              <div id="step6-q" class="div-style">
+                  <p>Q6: Are you 16-24 years old?
+                  </p><br>
+                  <span class="list-inline">
+                    <input id="step6-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <label for="step6-rad-y" class="radio-custom-label">Yes</label>
+                  </span>
+                  <span class="list-inline">
+                    <input id="step6-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <label for="step6-rad-n" class="radio-custom-label">No</label>
+                  </span>
+              </div>
+              <div id="step6-a" class="div-style">
+                  <div id="step6-yes">
+                  </div>
+                  <div id="step6-no">
+                  </div>                        
+              </div>
+              <div class="div-style">
+                  <ul class="list-inline float-left">
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                  </ul>
+                  <ul class="list-inline float-right">
+                      <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>  
+          <div id="step7" class="border rounded" style="display:none;">
+              <div id="step7-q" class="div-style">
+                  <p>Q7: Are You working or studying or seeking work or study / training?
+                  </p><br>
+                  <span class="list-inline">
+                    <input id="step7-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <label for="step7-rad-y" class="radio-custom-label">Yes</label>
+                  </span>
+                  <span class="list-inline">
+                    <input id="step7-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <label for="step7-rad-n" class="radio-custom-label">No</label>
+                  </span>
+              </div>
+              <div id="step7-a" class="div-style">
+                  <div id="step7-yes">
+                    <p class="match"><strong>Best Match</strong></p>
+                      <p class="match-subhead">Rent Choice Youth</p>                                                    
+                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                      <br>
+                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                      <br>
+                      <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                      <br>                  
+                      <p><strong>You may also be eligible for:</strong></p>
+                      <p>
+                        <ul class="eligible">
+                          <li>Rent Start Bond Loan</li>
+                          <li>Advance Rent</li>
+                          <li>Tenancy Assistance</li>
+                          <li>Tenancy Guarantee</li>
+                          <li>Brokerage Funds</li>
                         </ul>
-                        <ul class="list-inline float-right">
-                          <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                      </p>
+                      <br>
+                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                  </div>
+                  <div id="step7-no">
+                    <p class="match"><strong>Best Match</strong></p>
+                      <p class="match-subhead">Rent Choice Bond Loan</p>                                                    
+                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                      <br>
+                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                      <br>
+                      <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                      <br>                  
+                      <p><strong>You may also be eligible for:</strong></p>
+                      <p>
+                        <ul class="eligible">
+                          <li>Rent Start Bond Loan</li>
+                          <li>Advance Rent</li>
+                          <li>Tenancy Assistance</li>
+                          <li>Tenancy Guarantee</li>
+                          <li>Brokerage Funds</li>
                         </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <div id="step5" class="border rounded" style="display:none;">
-                    <div id="step5-q" class="div-style">
-                        <p>Q5: Are there aids or devices that could help you be more independent?
-                        </p><br>
-                        <span class="list-inline">
-                          <input id="step5-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                          <label for="step5-rad-y" class="radio-custom-label">Yes</label>
-                        </span>
-                        <span class="list-inline">
-                          <input id="step5-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                          <label for="step5-rad-n" class="radio-custom-label">No</label>
-                        </span>
-                    </div>
-                    <div id="step5-a" class="div-style">
-                        <div id="step5-yes">
-                          <p class="center"><i class="far fa-times-circle fa-2x"></i></p>
-                          <p class="red"><strong>You may not be eligible</strong></p>
-                          <p>If there are no aids, equipment or assistive technologies that could assist you to independently access the community
-                              then you may be eligible for a Companion Card.</p>
-                          <p>For eligibility criteria <a href="./?a=579401" style="color:black !important;" target="_parent"><strong>click here</strong></a></p>
-                        </div>
-                        <div id="step5-no">
-                        </div>                        
-                    </div>
-                    <div class="div-style">
-                        <ul class="list-inline float-left">
-							              <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                            <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                      </p>
+                      <br>
+                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                  </div>                        
+              </div>
+              <div class="div-style">
+                  <ul class="list-inline float-left">
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                  </ul>
+                  <ul class="list-inline float-right">
+                      <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+          <div id="step8" class="border rounded" style="display:none;">
+              <div id="step8-q" class="div-style">
+                  <p>Q7: Have you recently experienced a financially disruptive or destabilising life event such as illness, loss of a family member or losing a job?
+                  </p><br>
+                  <span class="list-inline">
+                    <input id="step8-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <label for="step8-rad-y" class="radio-custom-label">Yes</label>
+                  </span>
+                  <span class="list-inline">
+                    <input id="step8-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <label for="step8-rad-n" class="radio-custom-label">No</label>
+                  </span>
+              </div>
+              <div id="step8-a" class="div-style">
+                  <div id="step8-yes">
+                    <p class="match"><strong>Best Match</strong></p>
+                      <p class="match-subhead">Rent Choice Assist</p>                                                    
+                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                      <br>
+                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                      <br>
+                      <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                      <br>                  
+                      <p><strong>You may also be eligible for:</strong></p>
+                      <p>
+                        <ul class="eligible">
+                          <li>Rent Start Bond Loan</li>
+                          <li>Advance Rent</li>
+                          <li>Tenancy Assistance</li>
+                          <li>Tenancy Guarantee</li>
+                          <li>Brokerage Funds</li>
                         </ul>
-                        <ul class="list-inline float-right">
-                        	  <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                      </p>
+                      <br>
+                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                  </div>
+                  <div id="step8-no">
+                    <p class="match"><strong>Best Match</strong></p>
+                      <p class="match-subhead">Rent Choice Bond Loan</p>                                                    
+                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
+                      <br>
+                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                      <br>
+                      <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                      <br>                  
+                      <p><strong>You may also be eligible for:</strong></p>
+                      <p>
+                        <ul class="eligible">
+                          <li>Rent Start Bond Loan</li>
+                          <li>Advance Rent</li>
+                          <li>Tenancy Assistance</li>
+                          <li>Tenancy Guarantee</li>
+                          <li>Brokerage Funds</li>
                         </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-
-                <div id="step6" class="border rounded" style="display:none;">
-                    <div id="step6-q" class="div-style">
-                        <p>Q6: Will you be able to access the community independently in the future as a result of time, therapy, medical intervention
-                            (treatment or surgery)?
-                        </p><br>
-                        <span class="list-inline">
-                          <input id="step6-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                          <label for="step6-rad-y" class="radio-custom-label">Yes</label>
-                        </span>
-                        <span class="list-inline">
-                          <input id="step6-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                          <label for="step6-rad-n" class="radio-custom-label">No</label>
-                        </span>
-                    </div>
-                    <div id="step6-a" class="div-style">
-                        <div id="step6-yes">
-                            <p class="center"><i class="far fa-times-circle fa-2x"></i></p>
-                            <p class="red"><strong>You may not be eligible</strong></p>
-                            <p>If undergoing a rehabilitation program it may be best to wait until it can be demonstrated that your optimum recovery
-                                is complete before applying for a card. If a child's condition will improve and it is likely the child will not need
-                                high level care as an adult, then a Companion Card will not be issued.</p>
-                            <p>For eligibility criteria <a href="./?a=579401" style="color:black !important;" target="_parent"><strong>click here</strong></a></p>													  
-                        </div>
-                        <div id="step6-no">                        
-						                <p class="center"><i class="far fa-check-circle fa-2x"></i></p>
-                            <p class="green"><strong>You may be eligible</strong></p>
-                            <p>Based on the responses provided, you may be eligible for a Companion Card. For more information on the Companion Card Program, read the 
-                            <a href="https://www.companioncard.nsw.gov.au/about/companion-card-handbook" class="link-col" target="_parent">Companion Card handbook</a>.</p><br>
-						                <ul class="list-inline">
-                              <li><button type="button" aria-label="Apply for a Companion card" class="btn btn-primary btn-lg btn-block btn-custom"><a href="./?a=588227" target="_blank">Apply for a Companion Card <br> [PDF, 282.12KB]</a></button></li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="div-style">
-                        <ul class="list-inline float-left">
-                            <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>	
-							              <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                        </ul>
-                        <ul class="list-inline float-right">
-	                          <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                        </ul>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-            </section>
-        </div>
-    </div>
+                      </p>
+                      <br>
+                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                  </div>                        
+              </div>
+              <div class="div-style">
+                  <ul class="list-inline float-left">
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
+                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                  </ul>
+                  <ul class="list-inline float-right">
+                      <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
+                  </ul>
+              </div>
+              <div class="clearfix"></div>
+          </div>
+        </section>
+      </div>
+  </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
@@ -303,9 +473,8 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
      crossorigin="anonymous"></script>
 
-
-     <!-- <script src="./?a=630132"></script>  -->
     <script src="src/main.js"></script>
+    <!-- <script src="./?a=648150"></script> -->
 
 </body>
 
