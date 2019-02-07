@@ -121,10 +121,8 @@ $(document).ready(function() {
         setTimeout(function() {
           $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-yes").length > 0) {
-            $("[id^=" + parentID + "]").css("display", "none");
-            $(
-              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
-            ).fadeIn("fast");
+            $("#" + parentID + "-no").css("display", "none");
+            $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
@@ -138,10 +136,8 @@ $(document).ready(function() {
         setTimeout(function() {
           $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-yes").length > 0) {
-            $("[id^=" + parentID + "]").css("display", "none");
-            $(
-              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
-            ).fadeIn("fast");
+            $("#" + parentID + "-no").css("display", "none");
+            $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
@@ -244,10 +240,8 @@ $(document).ready(function() {
         setTimeout(function() {
           $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-no").length > 0) {
-            $("[id^=" + parentID + "]").css("display", "none");
-            $(
-              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
-            ).fadeIn("fast");
+            $("#" + parentID + "-yes").css("display", "none");
+            $("#" + parentID + "-a, #" + parentID + "-no").fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
@@ -261,10 +255,8 @@ $(document).ready(function() {
         setTimeout(function() {
           $("#" + parentID + "-q").css("display", "none");
           if ($("#" + parentID + "-no").length > 0) {
-            $("[id^=" + parentID + "]").css("display", "none");
-            $(
-              "#" + parentID + ",#" + parentID + "-a, #" + parentID + "-no"
-            ).fadeIn("fast");
+            $("#" + parentID + "-yes").css("display", "none");
+            $("#" + parentID + "-a, #" + parentID + "-no").fadeIn("fast");
             $("#" + parentID + "-a")
               .find("ul")
               .css("display", "none");
