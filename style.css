@@ -5,6 +5,10 @@ body {
   background-color: transparent;
 }
 
+a {
+  color: black !important;
+}
+
 body p {
   font-size: 20px;
   text-align: left;
@@ -30,12 +34,16 @@ p {
 
 .eligible {
   display: block !important;
-  width: 210px;
+  width: auto;
   margin: 0 auto;
 }
 
 .eligible li {
   text-align: left;
+}
+
+.eligible .href {
+  width: fit-content;
   border-bottom: 1px solid #00c4ff;
 }
 
@@ -46,6 +54,13 @@ p {
 
 .match-subhead {
   font-size: 24px !important;
+}
+
+.match-dualheadings {
+  width: 75%;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 }
 
 .text {
@@ -70,6 +85,7 @@ p {
 
 #step2-yes p,
 #step3-no p,
+#step4-no p,
 #step4-yes p,
 #step5-yes p,
 #step7-yes p,
@@ -94,6 +110,7 @@ p {
 .cont-ainer {
   padding-top: 20px;
   max-width: 750px;
+  min-width: 300px;
   margin: 0 auto;
 }
 
@@ -110,7 +127,7 @@ a {
 
 section {
   margin: 0 auto;
-  min-width: 750px;
+  min-width: 300px;
   max-width: 750px;
   background: white;
 }
@@ -135,16 +152,31 @@ button {
   background: rgba(0, 105, 181, 1);
 }
 
+.back-button,
+.exit-button {
+  margin-right: 20px;
+  line-height: 2.4;
+  color: #333;
+}
+
+.back-button,
+.exit-button:hover {
+  color: rgba(0, 105, 181, 1);
+  cursor: pointer;
+}
+
 .btn-custom {
   border-radius: 8px;
 }
 .fa-arrow-left,
-.fa-sign-out-alt {
+.fa-arrow-right,
+.fa-door-open {
   color: rgba(0, 105, 181, 1);
 }
 
 .btn-outline-secondary:hover .fa-arrow-left,
-.btn-outline-secondary:hover .fa-sign-out-alt {
+.btn-outline-secondary:hover .fa-arrow-right,
+.btn-outline-secondary:hover .fa-door-open {
   color: white;
 }
 
@@ -173,8 +205,7 @@ button {
 @media only screen and (max-width: 750px) {
   section {
     margin: 0 auto;
-    min-width: 500px;
-    max-width: 500px;
+    min-width: 550px;
   }
 
   #step2-yes p {
@@ -186,7 +217,6 @@ button {
   section {
     margin: 0 auto;
     min-width: auto;
-    max-width: 550px;
   }
   #step2-yes p {
     width: 100%;

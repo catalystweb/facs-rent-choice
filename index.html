@@ -41,14 +41,14 @@
 					<div class="div-style">
 						<div style="display:inline-block;"><i class="far fa-check-square fa-2x" style="color:#004D85;"></i><span class="header"> Rent Choice</span></div>
                 <br><br>
-                <p style="text-align:center;">Find out what rental assistance is right for you.
+                <p style="text-align:center;">Find out which product you may be eligible for.
                 </p><br>
                 <ul class="list-inline">
                     <li><button type="button" aria-label="Start" class="btn btn-primary btn-lg btn-block yes-step">Start</button></li>
                 </ul>
                 <ul class="list-inline">
                     <li>
-                        <a href="https://www.companioncard.nsw.gov.au" target="_parent"><button type="button" class="btn btn-secondary btn-lg btn-block no-step">Exit</button></a>
+                        <a href="https://www.facs.nsw.gov.au" target="_parent"><button type="button" class="btn btn-secondary btn-lg btn-block no-step">Exit</button></a>
                     </li>
                 </ul>
             </div>
@@ -60,7 +60,7 @@
                 <p>Q1: Are you an Australian citizen or permanent resident?
                 </p><br>
                 <span class="list-inline">
-                  <input id="step1-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                  <input id="step1-rad-y" class="radio-custom " name="radio-group" type="radio">
                   <label for="step1-rad-y" class="radio-custom-label">Yes</label>
                 </span>
                 <span class="list-inline">
@@ -72,19 +72,23 @@
                 <div id="step1-yes">
                 </div>
                 <div id="step1-no">
-                  <p class="match"><strong>No matches found</strong></p>                                                          
+                  <p class="match"></p>                                                          
                   <br>
-                  <p>For information on eligibility requirements go to Rent Assist. Or call our Housing Contact Centre on 1800 422 322</p>
+                  <p>Private Rental Assistance, including Rent Choice is only available to Australian citizens including permanent residents
+                    residing in New South Wales (NSW).</p>
                 </div>                        
             </div>
             <div class="div-style">
                 <ul class="list-inline float-left">
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
                 </ul>
                 <ul class="list-inline float-right">
-                    <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                </ul>
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
             </div>
             <div class="clearfix"></div>
         </div>
@@ -93,51 +97,53 @@
             <div id="step2-q" class="div-style">
                 <p>Q2: Are you currently a social housing tenant?
                 </p>
-                <p style="font-weight:normal; font-size:14px !important;">This also includes Aboriginal and Community Housing</p>
+                <p style="font-weight:normal; font-size:14px !important;">What is <a href="https://www.facs.nsw.gov.au/housing/help/ways/social-housing" target="_blank">social housing?</a></p>
                 <br>
                 <span class="list-inline">
-                  <input id="step2-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                  <input id="step2-rad-y" class="radio-custom " name="radio-group" type="radio">
                   <label for="step2-rad-y" class="radio-custom-label">Yes</label>
                 </span>
                 <span class="list-inline">
-                  <input id="step2-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                  <input id="step2-rad-n" class="radio-custom " name="radio-group" type="radio">
                   <label for="step2-rad-n" class="radio-custom-label">No</label>
                 </span>
             </div>
             <div id="step2-a" class="div-style">
                 <div id="step2-yes">
-                  <p class="match"><strong>Best Match</strong></p>
+                  <p class="match"><strong>You may be eligible for:</strong></p>
                   <p class="match-subhead">Rent Choice Transition</p>                                                    
-                  <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                  <br>
-                  <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                  <!-- <button type="button" aria-label="Find out more" class="btn btn-primary btn-lg btn-block">Find out more</button>  -->                 
                   <br>
                   <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
                   <br>                  
                   <p><strong>You may also be eligible for:</strong></p>
                   <p>
                     <ul class="eligible">
-                      <li>Rent Start Bond Loan</li>
-                      <li>Advance Rent</li>
-                      <li>Tenancy Assistance</li>
-                      <li>Tenancy Guarantee</li>
-                      <li>Rent Start Move</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                      <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                     </ul>
                   </p>
                   <br>
-                  <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>
+                  <p class="text">For information about these products call the Housing Contact Centre on 1800 422 322.</p>
                 </div>
                 <div id="step2-no">                    
                 </div>                        
             </div>
             <div class="div-style">
                 <ul class="list-inline float-left">
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
                 </ul>
                 <ul class="list-inline float-right">
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                </ul>
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
             </div>
             <div class="clearfix"></div>
         </div>
@@ -148,11 +154,11 @@
                 </p>                
                 <br>
                 <span class="list-inline">
-                  <input id="step3-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                  <input id="step3-rad-y" class="radio-custom " name="radio-group" type="radio">
                   <label for="step3-rad-y" class="radio-custom-label">Yes</label>
                 </span>
                 <span class="list-inline">
-                  <input id="step3-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                  <input id="step3-rad-n" class="radio-custom " name="radio-group" type="radio">
                   <label for="step3-rad-n" class="radio-custom-label">No</label>
                 </span>
             </div>                    
@@ -160,136 +166,143 @@
                 <div id="step3-yes">                                      
                 </div>
                 <div id="step3-no">
-                  <p class="match"><strong>Best Match</strong></p>
-                  <p class="match-subhead">Rent Choice Bond Loan</p>                                                    
-                  <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                  <br>
-                  <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
-                  <br>
-                  <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
-                  <br>                  
-                  <p><strong>You may also be eligible for:</strong></p>
+                  <p class="match"><strong>You may be eligible for:</strong></p>                                           
                   <p>
                     <ul class="eligible">
-                      <li>Rent Start Bond Loan</li>
-                      <li>Advance Rent</li>
-                      <li>Tenancy Assistance</li>
-                      <li>Tenancy Guarantee</li>
-                      <li>Rent Start Move</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                      <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                      <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                     </ul>
                   </p>
                   <br>
-                  <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>
+                  <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p>
                 </div>
             </div>
             <div class="div-style">
                 <ul class="list-inline float-left">
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
                 </ul>
                 <ul class="list-inline float-right">
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                </ul>
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
             </div>
             <div class="clearfix"></div>               
-         </div>
-          <div id="step4" class="border rounded" style="display:none;">
-          <div id="step4-q" class="div-style">
-              <p>Q4: Are you leaving your home, or have you already left your home due to domestic violence?
-              </p>              
-              <br>
-              <span class="list-inline">
-                <input id="step4-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                <label for="step4-rad-y" class="radio-custom-label">Yes</label>
-              </span>
-              <span class="list-inline">
-                <input id="step4-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                <label for="step4-rad-n" class="radio-custom-label">No</label>
-              </span>
-          </div>                    
-          <div id="step4-a" class="div-style">
-              <div id="step4-yes">
-                <p class="match"><strong>Best Match</strong></p>
-                  <p class="match-subhead">Rent Choice Start Safely</p>                                                    
-                  <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                  <br>
-                  <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
-                  <br>
-                  <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
-                  <br>                  
-                  <p><strong>You may also be eligible for:</strong></p>
-                  <p>
-                    <ul class="eligible">
-                      <li>Rent Start Bond Loan</li>
-                      <li>Advance Rent</li>
-                      <li>Tenancy Assistance</li>
-                      <li>Tenancy Guarantee</li>
-                    </ul>
-                  </p>
-                  <br>
-                  <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                                       
-              </div>
-              <div id="step4-no">                    
-              </div>                
-          </div>
-
-            <div class="div-style">
-                <ul class="list-inline float-left">
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                    <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                </ul>
-                <ul class="list-inline float-right">
-                  <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>                                                    
-                </ul>
-            </div>
-            <div class="clearfix"></div>
         </div>
-          <div id="step5" class="border rounded" style="display:none;">
-              <div id="step5-q" class="div-style">
-                  <p>Q5: Are you a former ADF member & been on active service (including peacekeeping) after 1 August 1990?
-                  </p><br>
-                  <span class="list-inline">
-                    <input id="step5-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
-                    <label for="step5-rad-y" class="radio-custom-label">Yes</label>
-                  </span>
-                  <span class="list-inline">
-                    <input id="step5-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
-                    <label for="step5-rad-n" class="radio-custom-label">No</label>
-                  </span>
-              </div>                    
-              <div id="step5-a" class="div-style">
-                  <div id="step5-yes">
-                    <p class="match"><strong>Best Match</strong></p>
-                    <p class="match-subhead">Rent Choice Veterans</p>                                                    
-                    <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                    <br>
-                    <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+        <div id="step4" class="border rounded" style="display:none;">
+            <div id="step4-q" class="div-style">
+                <p>Q4: Are you escaping domestic violence and need help finding a safe place to rent?
+                </p>              
+                <br>
+                <span class="list-inline">
+                  <input id="step4-rad-y" class="radio-custom" name="radio-group" type="radio">
+                  <label for="step4-rad-y" class="radio-custom-label">Yes</label>
+                </span>
+                <span class="list-inline">
+                  <input id="step4-rad-n" class="radio-custom" name="radio-group" type="radio">
+                  <label for="step4-rad-n" class="radio-custom-label">No</label>
+                </span>
+            </div>                    
+            <div id="step4-a" class="div-style">             
+              <div id="step4-yes">
+                  <p class="match"><strong>You may be eligible for:</strong></p>
+                    <div class="match-dualheadings">
+                      <p class="match-subhead">Rent Choice Youth</p>
+                      <span style="display:inline-block;"><a href="https://www.facs.nsw.gov.au/housing/factsheets/rent-choice-youth" target="_blank"><button type="button" aria-label="Find out more" class="btn btn-primary btn-lg btn-block">Find out more</button></a></span>
+                    </div>
+                    <div class="match-dualheadings">
+                      <p class="match-subhead">Rent Choice Start Safely</p>                                                                    
+                      <span style="display:inline-block;"><a href="https://www.facs.nsw.gov.au/housing/factsheets/start-safely" target="_blank"><button type="button" aria-label="Find out more" class="btn btn-primary btn-lg btn-block">Find out more</button></a></span> 
+                    </div>
                     <br>
                     <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
                     <br>                  
                     <p><strong>You may also be eligible for:</strong></p>
                     <p>
                       <ul class="eligible">
-                        <li>Rent Start Bond Loan</li>
-                        <li>Advance Rent</li>
-                        <li>Tenancy Assistance</li>
-                        <li>Tenancy Guarantee</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                        <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                       </ul>
                     </p>
                     <br>
-                    <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p> 
+                    <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p>
+                </div>             
+              <div id="step4-no">
+              </div>                
+              </div>
+              <div class="div-style">
+                  <ul class="list-inline float-left">
+                      <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                      <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                  </ul>
+                  <ul class="list-inline float-left">
+                      <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
+                  </ul>
+                  <ul class="list-inline float-right">
+                      <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                  </ul> 
+              </div>
+              <div class="clearfix"></div>
+        </div>
+          <div id="step5" class="border rounded" style="display:none;">
+              <div id="step5-q" class="div-style">
+                  <p>Q5: Are you a former ADF member & been on active service (including peacekeeping) after 1 August 1990?
+                  </p><br>
+                  <span class="list-inline">
+                    <input id="step5-rad-y" class="radio-custom " name="radio-group" type="radio">
+                    <label for="step5-rad-y" class="radio-custom-label">Yes</label>
+                  </span>
+                  <span class="list-inline">
+                    <input id="step5-rad-n" class="radio-custom " name="radio-group" type="radio">
+                    <label for="step5-rad-n" class="radio-custom-label">No</label>
+                  </span>
+              </div>                    
+              <div id="step5-a" class="div-style">
+                  <div id="step5-yes">
+                    <p class="match"><strong>You may be eligible for:</strong></p>
+                    <p class="match-subhead">Rent Choice Veterans</p>                                                    
+                    <a href="https://www.facs.nsw.gov.au/housing/factsheets/rent-choice-veterans" target="_blank"><button type="button" aria-label="Find out more" class="btn btn-primary btn-lg btn-block">Find out more</button></a>
+                    <br>
+                    <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
+                    <br>                  
+                    <p><strong>You may also be eligible for:</strong></p>
+                    <p>
+                      <ul class="eligible">
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                        <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                        <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
+                      </ul>
+                    </p>
+                    <br>
+                    <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p> 
                   </div>
                  <div id="step5-no">                            
                  </div>                        
               </div>
               <div class="div-style">
                   <ul class="list-inline float-left">
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                  </ul>
-                  <ul class="list-inline float-right">
-                    <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                  </ul>
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
               </div>
               <div class="clearfix"></div>
           </div>
@@ -298,11 +311,11 @@
                   <p>Q6: Are you 16-24 years old?
                   </p><br>
                   <span class="list-inline">
-                    <input id="step6-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <input id="step6-rad-y" class="radio-custom " name="radio-group" type="radio">
                     <label for="step6-rad-y" class="radio-custom-label">Yes</label>
                   </span>
                   <span class="list-inline">
-                    <input id="step6-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <input id="step6-rad-n" class="radio-custom " name="radio-group" type="radio">
                     <label for="step6-rad-n" class="radio-custom-label">No</label>
                   </span>
               </div>
@@ -313,13 +326,16 @@
                   </div>                        
               </div>
               <div class="div-style">
-                  <ul class="list-inline float-left">
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                  </ul>
-                  <ul class="list-inline float-right">
-                      <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                  </ul>
+                <ul class="list-inline float-left">
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
               </div>
               <div class="clearfix"></div>
           </div>  
@@ -328,138 +344,128 @@
                   <p>Q7: Are You working or studying or seeking work or study / training?
                   </p><br>
                   <span class="list-inline">
-                    <input id="step7-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <input id="step7-rad-y" class="radio-custom " name="radio-group" type="radio">
                     <label for="step7-rad-y" class="radio-custom-label">Yes</label>
                   </span>
                   <span class="list-inline">
-                    <input id="step7-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <input id="step7-rad-n" class="radio-custom " name="radio-group" type="radio">
                     <label for="step7-rad-n" class="radio-custom-label">No</label>
                   </span>
               </div>
               <div id="step7-a" class="div-style">
                   <div id="step7-yes">
-                    <p class="match"><strong>Best Match</strong></p>
+                    <p class="match"><strong>You may be eligible for:</strong></p>
                       <p class="match-subhead">Rent Choice Youth</p>                                                    
-                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                      <br>
-                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                      <a href="https://www.facs.nsw.gov.au/housing/factsheets/rent-choice-youth" target="_blank"><button type="button" aria-label="Find out more" class="btn btn-primary btn-lg btn-block">Find out more</button></a> 
                       <br>
                       <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
                       <br>                  
                       <p><strong>You may also be eligible for:</strong></p>
                       <p>
                         <ul class="eligible">
-                          <li>Rent Start Bond Loan</li>
-                          <li>Advance Rent</li>
-                          <li>Tenancy Assistance</li>
-                          <li>Tenancy Guarantee</li>
-                          <li>Brokerage Funds</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                          <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                         </ul>
                       </p>
                       <br>
-                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                      <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
                   </div>
                   <div id="step7-no">
-                    <p class="match"><strong>Best Match</strong></p>
-                      <p class="match-subhead">Rent Choice Bond Loan</p>                                                    
-                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                      <br>
-                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
-                      <br>
-                      <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
-                      <br>                  
-                      <p><strong>You may also be eligible for:</strong></p>
+                    <p class="match"><strong>You may be eligible for:</strong></p>                                            
                       <p>
                         <ul class="eligible">
-                          <li>Rent Start Bond Loan</li>
-                          <li>Advance Rent</li>
-                          <li>Tenancy Assistance</li>
-                          <li>Tenancy Guarantee</li>
-                          <li>Brokerage Funds</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                          <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                         </ul>
                       </p>
                       <br>
-                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                      <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
                   </div>                        
               </div>
               <div class="div-style">
-                  <ul class="list-inline float-left">
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                  </ul>
-                  <ul class="list-inline float-right">
-                      <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                  </ul>
+                <ul class="list-inline float-left">
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
               </div>
               <div class="clearfix"></div>
           </div>
           <div id="step8" class="border rounded" style="display:none;">
               <div id="step8-q" class="div-style">
-                  <p>Q7: Have you recently experienced a financially disruptive or destabilising life event such as illness, loss of a family member or losing a job?
+                  <p>Q7: Have you experienced a financial shock, such as illness, loss of a family member or losing a job?
                   </p><br>
                   <span class="list-inline">
-                    <input id="step8-rad-y" class="radio-custom yes-step" name="radio-group" type="radio">
+                    <input id="step8-rad-y" class="radio-custom " name="radio-group" type="radio">
                     <label for="step8-rad-y" class="radio-custom-label">Yes</label>
                   </span>
                   <span class="list-inline">
-                    <input id="step8-rad-n" class="radio-custom no-step" name="radio-group" type="radio">
+                    <input id="step8-rad-n" class="radio-custom " name="radio-group" type="radio">
                     <label for="step8-rad-n" class="radio-custom-label">No</label>
                   </span>
               </div>
               <div id="step8-a" class="div-style">
                   <div id="step8-yes">
-                    <p class="match"><strong>Best Match</strong></p>
+                    <p class="match"><strong>You may be eligible for:</strong></p>
                       <p class="match-subhead">Rent Choice Assist</p>                                                    
-                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                      <br>
-                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
+                      <a href="https://www.facs.nsw.gov.au/rent-choice-assist-trial" target="_blank"><button type="button" aria-label="Find out more" class="btn btn-primary btn-lg btn-block">Find out more</button></a>
                       <br>
                       <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
                       <br>                  
                       <p><strong>You may also be eligible for:</strong></p>
                       <p>
                         <ul class="eligible">
-                          <li>Rent Start Bond Loan</li>
-                          <li>Advance Rent</li>
-                          <li>Tenancy Assistance</li>
-                          <li>Tenancy Guarantee</li>
-                          <li>Brokerage Funds</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                          <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                         </ul>
                       </p>
                       <br>
-                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                      <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
                   </div>
                   <div id="step8-no">
-                    <p class="match"><strong>Best Match</strong></p>
-                      <p class="match-subhead">Rent Choice Bond Loan</p>                                                    
-                      <button type="button" aria-label="Apply" class="btn btn-primary btn-lg btn-block">Apply</button> 
-                      <br>
-                      <p class="text">More information about <span>Rent Choice youth on FACS</span></p>
-                      <br>
-                      <span style="border-bottom:1px solid rgba(188, 188, 188, 1); margin-left:20px; margin-right:20px;"></span>
-                      <br>                  
-                      <p><strong>You may also be eligible for:</strong></p>
+                      <p class="match"><strong>You may be eligible for:</strong></p>                                            
                       <p>
                         <ul class="eligible">
-                          <li>Rent Start Bond Loan</li>
-                          <li>Advance Rent</li>
-                          <li>Tenancy Assistance</li>
-                          <li>Tenancy Guarantee</li>
-                          <li>Brokerage Funds</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/statement-of-satisfactory-tenancy" class="href" target="_blank">Statement of Satisfactory Tenancy.</a> For current or former public housing tenants. It can be a reference for rental applications.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/brokerage-service" class="href" target="_blank">Private rental brokerage service.</a> Help for people with complex needs (and their support agencies) to set up a private rental tenancy. </li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/tenancy-guarantee-landlords-agents" class="href" target="_blank">Tenancy guarantee.</a> Gives extra cover for rental arrears or property damage. It is an incentive to offer a lease to people.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/factsheets/rentstart-bond-loan" class="href" target="_blank">Rentstart Bond Loan.</a> An interest-free loan to help eligible people pay a rental bond</li>
+                          <li><a href="" class="href">Advance Rent for Bond Loan.</a> Clients and people moving into low-cost accommodation. It helps with deposit payments.</li>
+                          <li><a href="https://www.facs.nsw.gov.au/housing/policies/rentstart-assistance-policy#tenancyassist" class="href" target="_blank">Tenancy Assistance.</a> Help with rent and water arrears for eligible private tenants.
                         </ul>
                       </p>
                       <br>
-                      <p class="text">For information on eligibility requirements go to <span>Rent Assist.</span> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
+                      <p class="text">For information on eligibility requirements go to <a href="https://www.facs.nsw.gov.au/housing/help/ways/renting-private-market" target="_blank"><span>Rent Assist.</span></a> Or call our Housing Contact Centre on 1800 422 322</p>                                                    
                   </div>                        
               </div>
               <div class="div-style">
-                  <ul class="list-inline float-left">
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last"><i class="fas fa-arrow-left"></i> Back</button></li>
-                      <li><button type="button" aria-label="Back" class="btn btn-outline-secondary back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</button></li>
-                  </ul>
-                  <ul class="list-inline float-right">
-                      <li><button type="button" aria-label="Exit" class="btn btn-outline-secondary finish" rel="tooltip" data-placement="top" title="This will exit the tool"><i class="fas fa-sign-out-alt"></i> Exit</button></li>
-                  </ul>
+                <ul class="list-inline float-left">
+                    <li><span aria-label="Back" class="exit-button back-to-last"> Back</span>				              
+                    <li><span aria-label="Back" class="exit-button back-to-last-err" style="display:none;"><i class="fas fa-arrow-left"></i> Back</span></li>
+                </ul>
+                <ul class="list-inline float-left">
+                    <li><button type="button" aria-label="Next" class="btn btn-outline-secondary next-step"><i class="fas fa-arrow-right"></i> Continue</button></li>
+                </ul>
+                <ul class="list-inline float-right">
+                    <li><a href="https://www.facs.nsw.gov.au" target="_blank"><button type="button" aria-label="Exit" class="btn btn-outline-secondary" rel="tooltip" data-placement="top" title="This will exit the tool"><!--<i class="fas fa-door-open"></i>--> Exit</button></a></li>
+                </ul> 
               </div>
               <div class="clearfix"></div>
           </div>
