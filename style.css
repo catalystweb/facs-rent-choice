@@ -5,6 +5,10 @@ body {
   background-color: transparent;
 }
 
+#step2-q a {
+  border-bottom: 1px solid #00c4ff;
+}
+
 a {
   color: black !important;
 }
@@ -47,7 +51,8 @@ p {
   border-bottom: 1px solid #00c4ff;
 }
 
-.match {
+.match,
+.match2 {
   text-align: center;
   font-size: 24px !important;
 }
@@ -76,6 +81,7 @@ p {
 #step2 p:first-child,
 #step3 p:first-child,
 #step4 p:first-child,
+#step4age p:first-child,
 #step5 p:first-child,
 #step6 p:first-child,
 #step7 p:first-child,
@@ -87,6 +93,8 @@ p {
 #step3-no p,
 #step4-no p,
 #step4-yes p,
+#step4age-yes p,
+#step4age-no p,
 #step5-yes p,
 #step7-yes p,
 #step7-no p,
