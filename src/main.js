@@ -243,6 +243,30 @@ $(document).ready(function() {
       if ($("#step8-rad-y").is(":checked")) {
         $("#" + parentID + "-q").css("display", "none");
         if ($("#" + parentID + "-yes").length > 0) {
+          $("[id^=" + parentID + "]").css("display", "none");
+          $("#" + parentID + "-rad-n").prop("checked", false);
+          $("#" + nextParent + ", #" + nextParent + "-q").fadeIn("fast");
+        }
+      }
+      if ($("#step8-rad-n").is(":checked")) {
+        $("#" + parentID + "-q").css("display", "none");
+        if ($("#" + parentID + "-no").length > 0) {
+          $("#" + parentID + "-yes").css("display", "none");
+          $("#" + parentID + "-a, #" + parentID + "-no").fadeIn("fast");
+          $("#" + parentID + "-a")
+            .find("ul")
+            .css("display", "none");
+          $("#" + parentID + "-rad-n").prop("checked", false);
+          $(".back-to-last").css("display", "none");
+          $(".next-step").css("display", "none");
+          $(".back-to-last-err").css("display", "inline-block");
+          $(".finish").css("display", "inline-block");
+        }
+      }
+      /* step 9 progression */
+      if ($("#step9-rad-y").is(":checked")) {
+        $("#" + parentID + "-q").css("display", "none");
+        if ($("#" + parentID + "-yes").length > 0) {
           $("#" + parentID + "-no").css("display", "none");
           $("#" + parentID + "-a, #" + parentID + "-yes").fadeIn("fast");
           $("#" + parentID + "-a")
@@ -255,7 +279,7 @@ $(document).ready(function() {
           $(".finish").css("display", "inline-block");
         }
       }
-      if ($("#step8-rad-n").is(":checked")) {
+      if ($("#step9-rad-n").is(":checked")) {
         $("#" + parentID + "-q").css("display", "none");
         if ($("#" + parentID + "-no").length > 0) {
           $("#" + parentID + "-yes").css("display", "none");
@@ -382,7 +406,8 @@ $(document).ready(function() {
             $(".next-step").css("display", "inline-block");
             document.getElementById(parentID + "-a").style.display = "none";
           }
-          if ($(".match2").is(":visible")) {
+        case "step9":
+          if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
             $(".back-to-last-err").css("display", "none");
             $(".finish").css("display", "none");
@@ -462,6 +487,12 @@ $(document).ready(function() {
         case "step8":
           $("#" + parentID).css("display", "none");
           $("#step6, #step6-q").fadeIn("fast");
+          break;
+        case "step9":
+          $("#" + parentID).css("display", "none");
+          $("#" + previousParent + ", #" + previousParent + "-q").fadeIn(
+            "fast"
+          );
           break;
       }
     });

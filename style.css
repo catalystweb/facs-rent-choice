@@ -44,6 +44,7 @@ p {
 
 .eligible li {
   text-align: left;
+  padding: 5px 0px 5px 0px;
 }
 
 .eligible .href {
@@ -85,7 +86,8 @@ p {
 #step5 p:first-child,
 #step6 p:first-child,
 #step7 p:first-child,
-#step8 p:first-child {
+#step8 p:first-child,
+#step9 p:first-child {
   font-weight: bold;
 }
 
@@ -99,7 +101,9 @@ p {
 #step7-yes p,
 #step7-no p,
 #step8-yes p,
-#step8-no p {
+#step8-no p,
+#step9-yes p,
+#step9-no p {
   text-align: center;
   width: 90%;
   margin: 0 auto;
