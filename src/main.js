@@ -62,7 +62,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-n").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -78,7 +78,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-y").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -111,7 +111,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-n").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -146,7 +146,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-y").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -160,7 +160,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-n").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -176,7 +176,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-y").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -219,7 +219,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-y").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -234,7 +234,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-n").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -259,7 +259,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-n").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -275,7 +275,7 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-y").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
@@ -290,14 +290,14 @@ $(document).ready(function() {
           $("#" + parentID + "-rad-n").prop("checked", false);
           $(".back-to-last").css("display", "none");
           $(".next-step").css("display", "none");
-          $(".back-to-last-err").css("display", "inline-block");
+          $(".back-to-last-end").css("display", "inline-block");
           $(".finish").css("display", "inline-block");
         }
       }
     });
   });
 
-  $(".back-to-last-err").click(function() {
+  $(".back-to-last-end").click(function() {
     var this_ = $(this);
     var parentID = this_
       .closest("div")
@@ -320,7 +320,7 @@ $(document).ready(function() {
         case "step1":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -330,7 +330,7 @@ $(document).ready(function() {
         case "step2":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -340,7 +340,7 @@ $(document).ready(function() {
         case "step3":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -350,7 +350,7 @@ $(document).ready(function() {
         case "step4":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -360,7 +360,7 @@ $(document).ready(function() {
         case "step4age":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -372,7 +372,7 @@ $(document).ready(function() {
         case "step5":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -382,7 +382,7 @@ $(document).ready(function() {
         case "step6":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -391,7 +391,7 @@ $(document).ready(function() {
           break;
         case "step7":
           $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-          $(".back-to-last-err").css("display", "none");
+          $(".back-to-last-end").css("display", "none");
           $(".finish").css("display", "none");
           $(".back-to-last").css("display", "inline-block");
           $(".next-step").css("display", "inline-block");
@@ -400,7 +400,7 @@ $(document).ready(function() {
         case "step8":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
@@ -409,7 +409,7 @@ $(document).ready(function() {
         case "step9":
           if ($(".match").is(":visible")) {
             $("#" + parentID + ", #" + parentID + "-q").fadeIn("fast");
-            $(".back-to-last-err").css("display", "none");
+            $(".back-to-last-end").css("display", "none");
             $(".finish").css("display", "none");
             $(".back-to-last").css("display", "inline-block");
             $(".next-step").css("display", "inline-block");
