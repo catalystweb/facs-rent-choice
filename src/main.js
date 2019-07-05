@@ -303,17 +303,6 @@ $(document).ready(function() {
       .closest("div")
       .parent()
       .attr("id");
-    var previousParent = this_
-      .closest("div")
-      .parent()
-      .prev("div")
-      .attr("id");
-
-    var nextParent = this_
-      .closest("div")
-      .parent()
-      .next("div")
-      .attr("id");
 
     $("div").each(function() {
       switch (parentID) {
@@ -430,11 +419,6 @@ $(document).ready(function() {
       .closest("div")
       .parent()
       .prev("div")
-      .attr("id");
-    var nextParent = this_
-      .closest("div")
-      .parent()
-      .next("div")
       .attr("id");
 
     $("div").each(function() {
