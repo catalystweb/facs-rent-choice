@@ -4,8 +4,8 @@
   "description": "decision tree for rent choice assist",
   "main": "index.html",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parcel build index.html"
+    "start": "npm run build",
+    "build": "gulp run"
   },
   "dependencies": {},
   "devDependencies": {
@@ -13,6 +13,7 @@
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.2.0",
     "gulp-concat": "^2.6.1",
+    "gulp-include": "^2.4.1",
     "gulp-uglify": "^3.0.2",
     "parcel-bundler": "^1.6.1"
   },

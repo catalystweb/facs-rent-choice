@@ -1,4 +1,6 @@
-//developed by Daniel Kandilas//
+//=require jquery.js
+//=require bootstrap.js
+//=require popper.js
 
 $(document).ready(function() {
   $("[id^=step]").css("display", "none");
