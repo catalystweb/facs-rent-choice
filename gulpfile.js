@@ -20,14 +20,18 @@ gulp.task('js', function() {
 }); 
 
 gulp.task('css', function() {
-    return src('src/css/*.css')
+    return src([
+            'src/css/bootstrap.css',
+            'src/css/radiobtn.css',
+            'src/css/style.css'
+            ])
       .pipe(concat('app.min.css'))
       .pipe(minify())
       .pipe(dest('build/'));
 });
 
 gulp.task('html', function() {
-    return src('*.html')
+    return src('src/*.html')
       .pipe(concat('index.html'))
       .pipe(dest('build/'));
 });
